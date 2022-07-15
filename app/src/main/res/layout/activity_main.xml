@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#054510"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:background="@color/black"
+        android:backgroundTint="@color/teal_200"
+        android:elevation="30dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="30dp">
+
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/enter_a_value" />
+
+        <ImageButton
+            android:id="@+id/image_button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="60dp"
+            android:layout_toEndOf="@+id/text1"
+            android:contentDescription="@string/plus_image"
+            android:src="@drawable/ic_action_name" />
+
+        <EditText
+            android:id="@+id/input_text"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="60dp"
+            android:layout_toEndOf="@+id/text1"
+            android:autofillHints="0"
+            android:cursorVisible="true"
+            android:gravity="center"
+            android:hint="@string/_00000"
+            android:inputType="number"
+            android:maxLength="6"
+            android:textColor="#E91E63"
+            android:textSize="24sp" />
+
+        <ImageButton
+            android:id="@+id/image_button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="180dp"
+            android:layout_marginTop="60dp"
+            android:layout_toEndOf="@+id/input_text"
+            android:contentDescription="@string/minus_button"
+            android:src="@drawable/minus" />
+
+        <ImageButton
+            android:id="@+id/reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/input_text"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="120dp"
+            android:contentDescription="@string/refresh_button"
+            android:src="@drawable/reset" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="300dp"
+        android:background="@color/black"
+        android:backgroundTint="@color/teal_200"
+        android:elevation="30dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="30dp">
+
+
+        <TextView
+            android:id="@+id/max_mark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/reset"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/enter_the_max_marks" />
+
+        <ImageButton
+            android:id="@+id/plus_button_for_max_mark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/reset"
+
+            android:layout_marginStart="180dp"
+            android:layout_marginTop="88dp"
+            android:contentDescription="@string/plus_image"
+            android:src="@drawable/ic_action_name" />
+
+        <EditText
+            android:id="@+id/input_max_mark"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/reset"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="80dp"
+            android:layout_toEndOf="@+id/plus_button_for_max_mark"
+            android:autofillHints="0"
+            android:cursorVisible="true"
+            android:gravity="center"
+            android:hint="@string/_00000"
+            android:inputType="number"
+            android:maxLength="6"
+            android:textColor="#E91E63"
+            android:textSize="24sp" />
+
+        <ImageButton
+            android:id="@+id/minus_button_for_max_mark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/reset"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="88dp"
+            android:layout_toEndOf="@+id/input_max_mark"
+            android:contentDescription="@string/minus_button"
+            android:src="@drawable/minus" />
+
+        <ImageButton
+            android:id="@+id/reset_button_for_max_mark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/input_max_mark"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="100dp"
+
+            android:layout_marginTop="140dp"
+            android:contentDescription="@string/refresh_button"
+            android:src="@drawable/reset" />
+    </androidx.cardview.widget.CardView>
+    <Button
+        android:id="@+id/result_button_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/card2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="@string/result" />
+
+    <TextView
+        android:id="@+id/output_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/result_button_id"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/output"
+        android:textColor="#9E0C0C"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+</RelativeLayout>

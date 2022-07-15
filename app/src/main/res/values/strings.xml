@@ -1,0 +1,13 @@
+
+
+<resources>
+<string name="app_name">counter - kotlin</string>
+<string name="enter_a_value">Enter a Value</string>
+<string name="_00000">000000</string>
+<string name="plus_image">plus image</string>
+<string name="minus_button">minus button</string>
+<string name="refresh_button">refresh button</string>
+<string name="enter_the_max_marks">enter the max marks</string>
+<string name="output">output</string>
+    <string name="result">result</string>
+</resources>
